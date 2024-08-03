@@ -1,0 +1,8 @@
+target/
+
+.project
+.classpath
+.settings/
+
+src/main/java/org/sqlite/ffm/extracted
+*.db

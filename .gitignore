@@ -1,8 +1,8 @@
 target/
+/databases
 
 .project
 .classpath
 .settings/
 
-src/main/java/org/sqlite/ffm/extracted
-*.db
+.vscode/

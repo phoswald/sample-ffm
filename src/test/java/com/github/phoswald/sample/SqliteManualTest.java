@@ -10,6 +10,6 @@ class SqliteManualTest {
 
     @Test
     void getVersion_valid_success() {
-        assertEquals("3.37.2", testee.getVersion());
+        assertEquals("3.45.1", testee.getVersion());
     }
 }

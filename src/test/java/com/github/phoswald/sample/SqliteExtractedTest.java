@@ -11,12 +11,12 @@ class SqliteExtractedTest {
     
     @Test
     void getVersion_valid_success() {
-        assertEquals("3.37.2", testee.getVersion());
+        assertEquals("3.45.1", testee.getVersion());
     }
     
     @Test
     void open_valid_success() {
-        boolean success = testee.open("testdata.db");
+        boolean success = testee.open("databases/testdata.db");
         assertTrue(success);
     }
 }

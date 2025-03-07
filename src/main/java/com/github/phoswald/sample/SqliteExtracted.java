@@ -30,7 +30,7 @@ class SqliteExtracted {
             return false;
         }
         
-        MemorySegment sqlSegement = arena.allocateFrom("select * from person;");
+        MemorySegment sqlSegement = arena.allocateFrom("SELECT * FROM person_;");
         MemorySegment zeroSegment = arena.allocateFrom(OfLong.JAVA_LONG, 0);
         MemorySegment callbackSegment = sqlite3_callback.allocate(this::callback, arena);
         MemorySegment errorMsgSegement = arena.allocate(ADDRESS);

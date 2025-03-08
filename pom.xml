@@ -38,7 +38,7 @@
         <executions>
           <execution>
             <?m2e execute onConfiguration?>
-            <id>jextract-exec</id>
+            <id>exec-jextract</id>
             <phase>generate-sources</phase>
             <goals>
               <goal>exec</goal>
@@ -55,7 +55,7 @@
         <version>3.6.0</version>
         <executions>
           <execution>
-            <id>jextract-add</id>
+            <id>add-jextract</id>
             <phase>generate-sources</phase>
             <goals>
               <goal>add-source</goal>

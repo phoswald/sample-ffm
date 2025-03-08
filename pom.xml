@@ -44,7 +44,18 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <executable>build-jextract.sh</executable>
+              <executable>jextract</executable>
+              <arguments>
+                <argument>--library</argument>
+                <argument>sqlite3</argument>
+                <argument>--target-package</argument>
+                <argument>org.sqlite.ffm.extracted</argument>
+                <argument>--output</argument>
+                <argument>target/generated-sources/jextract</argument>
+                <argument>--include-dir</argument>
+                <argument>/usr/include</argument>
+                <argument>/usr/include/sqlite3.h</argument>
+              </arguments>
             </configuration>
           </execution>
         </executions>
